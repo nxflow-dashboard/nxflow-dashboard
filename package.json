@@ -1,6 +1,6 @@
 {
   "name": "nxflow-dashboard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -20,5 +20,11 @@
   "homepage": "https://github.com/nxflow-dashboard/ui#readme",
   "devDependencies": {
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.18",
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "tailwind-merge": "^1.14.0"
   }
 }

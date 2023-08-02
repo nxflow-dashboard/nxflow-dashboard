@@ -6,6 +6,7 @@
     "lib": ["es2022"],
     "module": "commonjs",
     "target": "es2022",
+    "jsx": "preserve",
 
     "strict": true,
     "esModuleInterop": true,
