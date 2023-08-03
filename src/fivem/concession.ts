@@ -60,6 +60,14 @@ export type APIAccess = APIPartialAccess & {
     permissions: { id: string, permission: string }[]
 }
 
+export type APIVehicle = {
+    name: string
+    model: string
+    price: number 
+    category: string
+    categoryToString?: string
+}
+
 export const Limits = {
     Roles: 100
 }
