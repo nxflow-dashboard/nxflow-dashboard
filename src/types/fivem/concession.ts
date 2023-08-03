@@ -19,13 +19,28 @@ export type APIPartialPurchase = {
     clientId: string
 }
 
-export type APIClient = {
+export type APIPartialClient = {
     id: string
     name: string
     number: string
     createdAt: Date
     purchases: APIPartialPurchase[]
 }
+
+export type APIClient = {
+    id: string
+    name: string
+    number: string
+    createdAt: Date
+    purchases: APIPurchase[]
+};
+
+export type APILogs = {
+    id: string
+    action: string
+    createdAt: Date
+    user: { id: string, name: string, owner?: boolean }
+};
 
 export type APIUser = {
     id: string
@@ -43,4 +58,8 @@ export type APIPurchase = APIPartialPurchase & {
 
 export type APIAccess = APIPartialAccess & {
     permissions: { id: string, permission: string }[]
+}
+
+export const Limits = {
+    Roles: 100
 }
